@@ -54,7 +54,7 @@ func main() {
 }
 
 func reqToGPT(content string, bot *telego.Bot, chatId telego.ChatID) {
-	client := openai.NewClient("token")
+	client := openai.NewClient("")
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
